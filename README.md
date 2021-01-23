@@ -1,38 +1,30 @@
 # Chevereto
 
-[![Build](https://img.shields.io/github/workflow/status/chevereto/chevereto/CI/master?style=flat-square)](https://github.com/chevereto/chevereto/actions)
-[![codecov](https://img.shields.io/codecov/c/github/chevereto/chevereto?style=flat-square)](https://codecov.io/gh/chevereto/chevereto)
-[![CodeFactor](https://img.shields.io/codefactor/grade/github/chevereto/chevereto?label=code%20grade&style=flat-square)](https://www.codefactor.io/repository/github/chevereto/chevereto)
-[![Codacy Badge](https://img.shields.io/codacy/grade/9bc0696e742b438cabb258f9240cac66?style=flat-square)](https://www.codacy.com/gh/chevereto/chevereto)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/Chevereto/chevereto?style=flat-square)](https://codeclimate.com/github/chevereto/chevereto)
-[![Tech Debt](https://img.shields.io/codeclimate/tech-debt/Chevereto/chevereto?style=flat-square)](https://codeclimate.com/github/chevereto/chevereto)
-[![MIT License](https://img.shields.io/github/license/chevereto/chevereto?style=flat-square)](LICENSE)
-
 > 🔔 [Subscribe](https://newsletter.chevereto.com/subscription?f=PmL892XuTdfErVq763PCycJQrvZ8PYc9JbsVUttqiPV1zXt6DDtf7lhepEStqE8LhGs8922ZYmGT7CYjMH5uSx23pL6Q) to don't miss any update regarding Chevereto.
 
 ![Chevereto](LOGO.svg)
 
-Chevereto allows to create a multi-user, full-featured media sharing solution. It is headless, providing a both auto-mapped and self-described REST API that allows to use it under many different situations and use cases.
+Chevereto is a multi-user, full-featured media sharing solution. It's your services. Your rules, your eyes. Say goodbye to closures, restrictions and data mining on your media.
 
-It's your application. Your rules, your eyes. Say goodbye to closures, restrictions and data mining on your media.
+Chevereto is a [mature project](#history) which has been always evolving. Also, we are proudly:
 
-## 🐘 Use cases
+- 100% indie developed
+- [Community](https://chevereto.com/community/) driven
+- Open Source Licensed (OSI approved)
+- Largely used at all levels, specially at [high scale](#-powered-by-chevereto)
+- Highly extensible, configurable and pluggable
 
-It provides an extensible API, built on top of the [Chevere](https://chevere.org/) framework. With Chevereto you can build _exactly_ what you need around your media.
+## Technical Overview
 
-You can rely your project in a tested, solid, clean and highly-proficient code base, all maintained by a [highly-dedicated](https://github.com/rodolfoberrios) developer.
+This is the repository for the Chevereto V4 application project skeleton, which orchestrates the whole thing. In Chevereto, [API](https://github.com/Chevereto/api) provides all the I/O for user instructions which are driven by the application. The administration for the user application content is provided by [API Admin](https://github.com/Chevereto/api-admin).
 
-## 🧔🏾 Experienced
+On the other hand, [Peafowl](https://github.com/Chevereto/peafowl) and [Dashboard](https://github.com/Chevereto/dashboard) are the default web clients for API and API Admin. The concept of "default" is very important here because Chevereto is _built_ to be plugged to _any_ given interface, is not limited to just the defaults, and hopefully it will get _many_ cool user interfaces.
 
-Chevereto project started in 2007 and it accounts 4 [major releases](#major-releases).
-
-## 😉 Community driven
-
-A [community](https://chevereto.com/community/) drives the development of Chevereto.
+Chevereto also provides an OAuth2 server supporting third-party login providers, which handles account access, sessions and credentials. That way, Chevereto API-client users connect to the same login experience regardless of the user interface being used. In this context, the given user interface appears to the user as an application authorized to the account.
 
 ## 💪🏽 Powered by Chevereto
 
-There are about 10~15K Chevereto installations out there, each one hosting from zero up to million images. The following [notable public websites](https://chevereto.top/) are using Chevereto (any release).
+There are many Chevereto installations out there, probably you have already use it without even knowing it. Chevereto installations vary, each one hosting from zero up to _n_ million images. The following [notable public websites](https://chevereto.top/) are using Chevereto (any release).
 
 | Website                                   | Images |
 | ----------------------------------------- | ------ |
@@ -42,7 +34,7 @@ There are about 10~15K Chevereto installations out there, each one hosting from 
 | [Freeimage.host](https://freeimage.host/) | 100K   |
 | [Gifyu](https://gifyu.com/)               | 3M     |
 | [ImageRide](https://imageride.com/)       | 170K   |
-| [ImgBB](https://imgbb.com/)               | 1MB    |
+| [ImgBB](https://imgbb.com/)               | 1M+    |
 | [imgchr](https://imgchr.com/)             | 5M     |
 | [imghub.io](https://imghub.io/)           | 15k    |
 | [imgyukle](https://imgyukle.com/)         | ??     |
@@ -55,19 +47,17 @@ There are about 10~15K Chevereto installations out there, each one hosting from 
 
 ## Contribution
 
-The project is under alpha development and is not recommended to use it for production yet. However, developers (and those wanting to become) are welcome!
+Developers (and those wanting to become) are welcome! Join our [Discord](https://chv.to/discord) channel for more into this.
 
-- Plenty application code from V3 needs to be updated to the new coding standard and application architecture
-- I'm [ripping apart](https://chevereto.com/community/threads/features-to-deprecate-for-v4.11531/) all the _excess_ of features present in V3 (that plugins will be needed to keep some features)
-- Documentation (for the Chevere framework)
+❤ You can also [donate](https://paypal.me/RodolfoBerrios) to support my work.
 
 ## History
 
-Chevereto project began in 2007 as a self-hosted alternative to services like ImageShack, Photobucket, Flickr, imgur, 500px, etc. Development has ben carried **all this time** exclusively by [Rodolfo Berrios](https://rodolfoberrios.com/) who works only in Chevereto.
+Chevereto project began in 2007 as a self-hosted alternative to ImageShack when they blocked the images on my forum and it started as a simple one-click web uploader. It got good reception, and it became an Open Source project. I started this on college and I made my career around it.
 
-It was released as Open Source software in February 2009, but due to lack of contribution the project went proprietary in 2011 with the introduction of V2. In April 2014, V3 was released and shortly after releasing it, licensing for V2 went free (MIT License) to open the software for more users.
+During all these years many things have happened, licensing has changed a couple of times and to keep it short on August 2016 a fork, named [Chevereto-Free](https://github.com/chevereto/chevereto-free), was released to kickstart the process of turning all Chevereto into Open Source.
 
-On August 2016 a fork, named [Chevereto-Free](https://github.com/chevereto/chevereto-free), was released to kickstart the process of turning all Chevereto into Open Source.
+And here we are!
 
 ### Major Releases
 
