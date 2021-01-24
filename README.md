@@ -4,6 +4,8 @@
 
 ![Chevereto](LOGO.svg)
 
+[![Discord](https://img.shields.io/discord/759137550312407050?style=flat-square)](https://chv.to/discord)
+
 Chevereto is a multi-user, full-featured media sharing solution. It's your services. Your rules, your eyes. Say goodbye to closures, restrictions and data mining on your media.
 
 In a nutshell, Chevereto is:
