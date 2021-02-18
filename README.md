@@ -76,7 +76,7 @@ During all these years many things have happened, licensing has changed a couple
 
 ## Funding
 
-Funding core concepts are pending release (is a quite hard task to monetize Open Source). For now, you can read [Thoughts on monetizing Chevereto installations](https://rodolfo.is/2021/01/20/thoughts-on-monetize-chevereto-installations/) which outlines my way of think and the business that I hope you can spawn with Chevereto.
+Funding core concepts are pending release (is a quite hard task to monetize Open Source). For now, you can read [Thoughts on monetizing Chevereto installations](https://rodolfo.is/2021/02/03/monetizing-chevereto/) which outlines my way of think and the business that I hope you can spawn with Chevereto.
 
 ## License
 
