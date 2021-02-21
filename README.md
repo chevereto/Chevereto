@@ -6,21 +6,21 @@
 
 [![Discord](https://img.shields.io/discord/759137550312407050?style=flat-square)](https://chv.to/discord)
 
-Chevereto is a multi-user, full-featured media sharing solution. It's your services. Your rules, your eyes. Say goodbye to closures, restrictions and data mining on your media.
+Chevereto is a self-hosted multipurpose multi-user, full-featured media sharing solution. It can be used to create a myriad of applications or to empower existing systems, all around the concept of users sharing media content.
 
 In a nutshell, Chevereto is:
 
-- 👨🏾‍💻 An indie developed [mature project](#history)
-- ❤ A large [Community](https://chevereto.com/community/)
-- 🤯 Used everywhere, including at [high scale](#-powered-by-chevereto)
-- 🔌 Extensible, configurable and pluggable
-- ⚖ Open Source Software
+- 🤗 A [community](https://chevereto.com/community/) driven software
+- ✨ Headless software - bring your own user interface
+- 🔌 Pluggable - make it truly _yours_
+- 🌱 Grow as you want with a variety of servicing strategies
+- 🤑 Monetize it - go ahead and [Monetize your Chevereto installation](https://rodolfo.is/2021/01/20/monetize-your-chevereto-installation/)
 
 ## Technical Overview
 
 This is the repository for the Chevereto V4 application project skeleton, which orchestrates the whole thing. In Chevereto, [API](https://github.com/Chevereto/api) provides all the I/O for user instructions which are driven by the application. The administration for the user application content is provided by [API Admin](https://github.com/Chevereto/api-admin).
 
-On the other hand, [Peafowl](https://github.com/Chevereto/peafowl) and [Dashboard](https://github.com/Chevereto/dashboard) are the default web clients for API and API Admin. The concept of "default" is very important here because Chevereto is _built_ to be plugged to _any_ given interface, is not limited to just the defaults, and hopefully it will get _many_ cool user interfaces.
+On the [Peafowl](https://github.com/Chevereto/peafowl) and [Dashboard](https://github.com/Chevereto/dashboard) are the default web clients for API and API Admin. The concept of "default" is very important here because Chevereto is _built_ to be plugged to _any_ given interface, is not limited to just the defaults, and hopefully it will get _many_ cool user interfaces.
 
 Chevereto also provides an OAuth2 server supporting third-party login providers, which handles account access, sessions and credentials. That way, Chevereto API-client users connect to the same login experience regardless of the user interface being used. In this context, the given user interface appears to the user as an application authorized to the account.
 
@@ -57,15 +57,13 @@ Developers (and those wanting to become) are welcome! Join our [Discord](https:/
 
 Development of this software is a life project that has consumed many years of my time. **I don't work for any company**, I'm not backed by anyone else except users of this software.
 
-## History
+## Origin
 
-Chevereto project began in 2007 as a self-hosted alternative to ImageShack when they blocked the images on my forum and it started as a simple one-click web uploader. It got good reception, and it became an Open Source project. I started this on college and I made my career around it.
-
-During all these years many things have happened, licensing has changed a couple of times and to keep it short on August 2016 a fork, named [Chevereto-Free](https://github.com/chevereto/chevereto-free), was released to kickstart the process of turning all Chevereto into Open Source.
+Chevereto began in 2007 as a self-hosted alternative to ImageShack. It started as one-click image hosting and here we are.
 
 ### Major Releases
 
-| Version                                            | Date       | Licensing (release) | Licensing (actual) |
+| Version                                            | Release    | Licensing (release) | Licensing (actual) |
 | -------------------------------------------------- | ---------- | ------------------- | ------------------ |
 | [V1](https://code.google.com/archive/p/chevereto/) | 2009-02-26 | MIT License         | MIT License        |
 | [V2](https://github.com/chevereto/chevereto-2)     | 2011-06-15 | Proprietary         | MIT License        |
